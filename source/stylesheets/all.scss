@@ -1,0 +1,74 @@
+
+
+@import "functions";
+@import "helpers/variables";
+@import "mixins";
+
+@import "root";
+@import "print";
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "utilities";
+
+
+// Custom
+@import "components/navpanel";
+
+
+.btn {
+    border-width: 2px;
+}
+
+.header-carousel-item {
+    height: 450px;
+}
+
+.bg-cover {
+    background-position: center center;
+    background-size: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute
+}
+
+@media (min-width: 768px) {
+    .text-sm-dark {
+        color: #333 !important;
+    }
+}
