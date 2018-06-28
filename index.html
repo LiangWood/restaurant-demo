@@ -5,16 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>特斯特 西餐廳</title>
-
-  <!-- custom css -->
+  <title>特斯特餐廳</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style/all.css">
-
-
+  <link rel="stylesheet" href="/stylesheets/all.css">
   <style>
     html {
       font-size: 16px;
+      font-family: "Noto Sans TC","IntercomText", "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+    }
+    .bg-eee{
+      background-color: #343a403d;
     }
 
     .bg-cover {
@@ -41,6 +41,13 @@
     .absolute {
       position: absolute
     }
+    h5.text-muted:hover{
+      transition: all .6s;
+      color:#fff!important;
+    }
+    .dropdown-hover{
+      transition: all .6s;
+    }
 
     @media (min-width: 576px) {
       .text-sm-dark {
@@ -51,16 +58,10 @@
 </head>
 
 <body>
-  <div class="py-1 text-right bg-secondary">
-    <div class="container">
-      <a href="#" class="text-white"><span class="fa fa-twitter-square"></span></a>
-      <a href="#" class="text-white"><span class="fa fa-facebook-official"></span></a>
-    </div>
-  </div>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="/images/logo_w.svg" width="120" height="24" alt="">
+        <h5 class="mb-0 text-muted">特斯特 餐廳</h5>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -72,7 +73,7 @@
           <li class="nav-item active">
             <a class="nav-link" href="#">首頁 <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown dropdown-hover">
             <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
               美味菜單
@@ -85,8 +86,8 @@
           </li>
         </ul>
         <div class="form-inline">
-          <a href="#" class="btn btn-sm btn-outline-primary mr-1" data-toggle="modal" data-target="#loginModal">登入</a>
-          <a href="#" class="btn btn-sm btn-primary px-4" data-toggle="modal" data-target="#registerModal">註冊</a>
+          <a href="#" class="btn btn-sm btn-danger px-4 mr-1" data-toggle="modal" data-target="#loginModal">登入</a>
+          <a href="#" class="btn btn-sm btn-warning px-4" data-toggle="modal" data-target="#registerModal">註冊</a>
         </div>
       </div>
     </div>
@@ -100,30 +101,27 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
-        <div class="carousel-item header-carousel-item bg-cover active" style="background-image: url(https://images.unsplash.com/photo-1492683513054-55277abccd99?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=)">
-          <!-- 範例圖片來源: https://unsplash.com/photos/OSwea3yxjT0 -->
+        <div class="carousel-item header-carousel-item bg-cover active" style="background-image: url(https://cdn.wallpaper.com/main/styles/responsive_920w_scale/s3/restaurant-ibu-copenhagen-1.jpg)">
           <div class="carousel-caption d-none d-md-block">
             <div class="container">
-              <h3>一個人，田野間的輕鬆美味</h3>
-              <p>城小中假上問，洲元化究變快歡專，臺正機上色從多空放我。來來中的來落行間我海府子成隨上事女，的石在朋經以定空他；級病期他，會性前集一於得當院應對分！意斯能己水成神錢。</p>
+              <h3>Alone</h3>
+              <p>Filling a modest space on Vesterbrogade, head chef Henrik Jyrk collaborated with Ferm Living to take advantage of the location’s intimacy.</p>
             </div>
           </div>
         </div>
-        <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(https://images.unsplash.com/photo-1497668512640-fcbd959e5338?dpr=2&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=)">
-          <!-- 範例圖片來源: https://unsplash.com/photos/-7QwO2XB5es  -->
+        <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(https://cdn.wallpaper.com/main/styles/responsive_920w_scale/s3/wyers-bar-amsterdam-1.jpg)">
           <div class="carousel-caption d-none d-md-block">
             <div class="container">
-              <h3>大口的放縱，毫無保留</h3>
-              <p>組道心深的起一強理重麼變喜才她起寶事運果引物；生一越。為己的治應的了：有的兩懷華場前間不不存力：性張得燈表年健交公言要認才部黨岸家深此一和國專女特希這密年那報。</p>
+              <h3>No reason</h3>
+              <p>Local designers Studio Modijefsky tastefully channel the archetypal hotel brasserie through a muted palette of olive greens and golden browns, enriched by finishes of brass</p>
             </div>
           </div>
         </div>
-        <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(https://images.unsplash.com/photo-1453831362806-3d5577f014a4?dpr=2&auto=format&fit=crop&w=1500&h=1016&q=80&cs=tinysrgb&crop=)">
-          <!-- 範例圖片來源: https://unsplash.com/photos/Pt_YmiYm7a4  -->
+        <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(https://cdn.wallpaper.com/main/styles/responsive_920w_scale/s3/prado-lisbon-2.jpg)">
           <div class="carousel-caption d-none d-md-block">
             <div class="container">
-              <h3>愛戀的赤裸裸辣辣</h3>
-              <p>件臺水則的看方府機英下英影加非！為走改幾少我住準愛地下。巴開上人在，但雜處權音生什有會能教！還話弟手大了。</p>
+              <h3>Prado Restaurant</h3>
+              <p>The concept for the menu and the design came from the building itself, an abandoned early 19th-century factory which made candied fruit, preserves and biscuits.</p>
             </div>
           </div>
         </div>
@@ -139,23 +137,23 @@
     </div>
   </header>
 
-  <section class="py-5 bg-info text-white">
+  <section class="py-5 bg-eee text-white">
     <div class="container my-4">
       <div class="row">
         <div class="col-md-4">
-          <div class="mb-3"><span class="fa fa-cutlery fa-4x"></span></div>
-          <h3>忘卻不了的莓果香</h3>
-          <p>沒有遺憾的愛過、支持過他們，在商言商，他們總是假設：喔，但相信我。可是已經晚了……請你以後不要在我面前說英文了。</p>
+          <div class="mb-3 text-center"><span class="text-muted fa fa-cutlery fa-4x"></span></div>
+          <h3 class="text-dark">Expect the best choice</h3>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae necessitatibus dicta perferendis ad officiis quisquam modi vel. Nihil, corporis? Nesciunt alias maiores blanditiis, fugit unde ex iure dolore! Illum, nemo?</p>
         </div>
         <div class="col-md-4">
-          <div class="mb-3"><span class="fa fa-coffee fa-4x"></span></div>
-          <h3>積沈在心中的漣漪</h3>
-          <p>但是當有機會時，但因為你是誠實且對此公平的，雪季可以延續4個月甚至5個月。摩挲著你的顏面，至少你不能完全抱怨荊棘，假如我在萬里外接到你的死耗，小馬，裝一個農夫，可以恣嘗鮮味。</p>
+          <div class="mb-3 text-center"><span class="text-muted fa fa-coffee fa-4x"></span></div>
+          <h3 class="text-dark">Deliciousness jumping</h3>
+          <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ad quas reprehenderit eaque quos.</p>
         </div>
         <div class="col-md-4">
-          <div class="mb-3"><span class="fa fa-birthday-cake fa-4x"></span></div>
-          <h3>放不下的體脂肪</h3>
-          <p>那就結婚吧我沒有妳會死，什麼都別說了，我什麼都不要，但我可以肯定地告訴你，前世的五百次回眸，沒有妳我的人生沒有意義。</p>
+          <div class="mb-3 text-center"><span class="text-muted fa fa-birthday-cake fa-4x"></span></div>
+          <h3 class="text-dark">As nature teaches us</h3>
+          <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam unde fugit molestias nihil sint mollitia tenetur, magnam perspiciatis vel quis delectus ipsam adipisci natus alias iusto enim animi quia dignissimos!</p>
         </div>
       </div>
     </div>
@@ -164,53 +162,42 @@
   <section class="container-fluid py-5 bg-light" style="position: relative">
     <div class="row ">
       <div class="col-md-5 bg-cover" style="position: absolute; top: 0; bottom: 0;
-      background-image: url(https://images.unsplash.com/photo-1481185103603-1dc844ef51db?dpr=2&auto=format&fit=crop&w=1080&h=718&q=80&cs=tinysrgb&crop=)"></div>
-      <!-- 圖片來源：https://unsplash.com/photos/8oWXPd_KM2E -->
+      background-image: url(https://cdn.wallpaper.com/main/styles/responsive_920w_scale/s3/lorne-london-1.jpg)"></div>
     </div>
     <div class="container">
       <div class="row justify-content-end text-white text-sm-dark">
         <div class="col-md-7">
-          <h3>歡迎來到六角餐廳</h3>
-          <p>遇到這些灰色道德地帶時，要到兩三年後才會比較有清楚的感受，而這正是為什麼西方公司會存活，作為一個年輕人，但是負責的人需要接受風險、喜歡冒險和願意負責。2，流感病毒攻心，春電展將開展，NBA明星周，低價電信資費戰，曼城主場連勝。</p>
-          <a href="#" class="btn btn-outline-info mb-5 mt-2">了解更多</a>
-          <div class="row">
-            <div class="col-md-6">
-              <h4>像含羞草似的嬌柔</h4>
-              <p>遍地烽火，台電影星空，Galaxy，鄧志偉揮巨炮，近兩年最大，國內油價連3漲，上學遇到洪七公。</p>
-            </div>
-            <div class="col-md-6">
-              <h4>老師可不可以補交</h4>
-              <p>歐洲和其他國家，現在世界已經變了，在這段感情中，讓情況越來越糟糕，台灣甚至更小、天然資源更少，身形高挑像是一個模特兒，只會讓事情更混亂，我依然盯著窗外圓山飯店的燈光。</p>
-            </div>
-          </div>
+          <h3>Welcome Test restaurant</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate magni saepe amet sapiente accusamus doloribus dolores. Est distinctio earum, architecto, vero eaque debitis ex dolor, fugiat voluptatum assumenda labore illum.</p>
+          <a href="#" class="btn btn-secondary mb-5 mt-2">了解更多</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="py-5">
-    <div class="container">
-      <h2 class="text-center my-3">如何這麼美味</h2>
+<section class="py-5 bg-secondary">
+    <div class="container text-white">
+      <h1 class="display-3 text-center my-3">Eat and dream</h1>
       <div class="row">
         <div class="col-md-6 my-5">
           <div class="d-flex flex-row">
             <div class="mr-3">
-              <span class="text-info fa fa-4x fa-gg-circle"></span>
+              <span class="text-dark fa fa-4x fa-gg-circle"></span>
             </div>
             <div>
-              <h3>美艷的食材</h3>
-              <p>工作，那麼你至少得吃一對兒鯨魚……我身邊的朋友們啊，沒有錢，但又找不到出路．如果多吃魚可以補腦讓人變聰明的話，珍惜生活上帝還讓你活著，年老的時候，然後選中一張百元大鈔。</p>
+              <h3>Eat responsibly</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem voluptas, neque illum laudantium ab veniam tenetur sint voluptatem consectetur, ipsum temporibus aliquid, rerum praesentium a! Voluptate voluptas ullam velit unde.</p>
             </div>
           </div>
         </div>
         <div class="col-md-6 my-5">
           <div class="d-flex flex-row">
             <div class="mr-3">
-              <span class="text-info fa fa-4x fa-buysellads"></span>
+              <span class="text-dark fa fa-4x fa-buysellads"></span>
             </div>
             <div>
-              <h3>里隧道貫</h3>
-              <p>呂明賜帶中華隊，Mark，禽流感驚爆，勸進不斷，新恐龍化石研究"雷克斯暴龍的叔公"。生，生，樹不要皮，年輕的時候，.人怕出名豬怕壯，睡你的老公，.人怕出名豬怕壯，可是已經晚了……請你以後不要在我面前說英文了。</p>
+              <h3>Eat and drink</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum iste ut, accusamus aut qui amet? Autem illum dolorem sunt, molestias consectetur ducimus animi veritatis dolor, vitae eum nihil laboriosam cumque?</p>
             </div>
           </div>
         </div>
@@ -218,53 +205,24 @@
         <div class="col-md-6 my-5">
           <div class="d-flex flex-row">
             <div class="mr-3">
-              <span class="text-info fa fa-4x fa-forumbee"></span>
+              <span class="text-dark fa fa-4x fa-forumbee"></span>
             </div>
             <div>
-              <h3>是貝德花芬是槐格納</h3>
-              <p>再也不出聲不鬧：并且你有的是可驚的口味，不能怨，我見著的只你的遺像，就是你媽，他年紀雖則小，最有資格指證或相詮釋。</p>
+              <h3>The pleasure of variety on your plate</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, nemo magni. Architecto ab quam, nemo voluptatum ea perferendis explicabo, quaerat vero dolores aperiam illum dolorum eveniet ipsam. Obcaecati, esse similique!</p>
             </div>
           </div>
         </div>
         <div class="col-md-6 my-5">
           <div class="d-flex flex-row">
             <div class="mr-3">
-              <span class="text-info fa fa-4x fa-first-order"></span>
+              <span class="text-dark fa fa-4x fa-first-order"></span>
             </div>
             <div>
-              <h3>我跳出計程車跑向大直美麗華</h3>
-              <p>星巴克，他到了，而這正是為什麼西方公司會存活，而隨著你慢慢長大變老並開始面對這些困難的選擇時，根據你和這三個主要地區員工談話和面試的經驗。</p>
+              <h3>You can’t it eat just one</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur sint laboriosam perferendis. Vitae sapiente eaque alias reiciendis ut iste cum pariatur nulla rem veniam, cupiditate quam rerum reprehenderit accusantium. Quisquam.</p>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="container-fluid py-5 bg-light" style="position: relative">
-    <div class="row justify-content-end">
-      <div class="col-md-5 bg-cover" style="position: absolute; top: 0; bottom: 0;
-      background-image: url(https://images.unsplash.com/photo-1498309313100-e308c8946b45?dpr=2&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=)"></div>
-      <!-- 圖片來源：https://unsplash.com/photos/4Cjn0FDEud8 -->
-    </div>
-    <div class="container">
-      <div class="row justify-content-start text-white text-sm-dark">
-        <div class="col-md-7">
-          <h3>讓快樂持續發生</h3>
-          <p>在每個機會裡，但現在這些亞洲父母來了，懷疑自己是否重要，到底你自己的感覺是什麼。</p>
-          <dl class="row">
-            <dt class="col-md-3">不吃飽哪有力氣減肥啊？</dt>
-            <dd class="col-md-9">邊，是貝德花芬是槐格納你就愛，再也不出聲不鬧：并且你有的是可驚的口味，不能怨，我見著的只你。</dd>
-
-            <dt class="col-md-3">愛你，愛你，我們真的羡慕</dt>
-            <dd class="col-md-9">錢立地就成富豪勢力家，他叩了不少下頭，和別的其餘的一日，是怎樣生竟不如其死？我，愛你，愛你，我們真的羡慕，我猜想，卻沒有同樣的碎痕，雪西裡與普陀山，沒福見著你的父親，想中止也不可能。</dd>
-
-            <dt class="col-md-3">我再來歐洲你已經早</dt>
-            <dd class="col-md-9">這才覺著父性的愛像泉眼似的在性靈裏汩汩的流出：只可惜是遲了，講給我聽你得小提琴的故事：怎樣那晚上買琴來的時候你已經在你的小床上睡好。</dd>
-
-            <dt class="col-md-3 text-truncate">假如你單是站著看還不滿意時</dt>
-            <dd class="col-md-9">這時候想回頭已經太遲，只是這無恩的長路，還是有人成心種著的？</dd>
-          </dl>
         </div>
       </div>
     </div>
@@ -298,19 +256,7 @@
               <input type="number" class="form-control" id="number" value="2" placeholder="請輸入人數" required>
               <small class="invalid-feedback">輸入人數，讓我們準備位置</small>
             </div>
-            <div class="custom-controls-stacked">
-              <label class="custom-control custom-radio">
-                <input id="vegetarian1" name="radio-vegetarian" type="radio" class="custom-control-input">
-                <span class="custom-control-indicator"></span>
-                <span class="custom-control-description">需要素食</span>
-              </label>
-              <label class="custom-control custom-radio">
-                <input id="vegetarian2" name="radio-vegetarian" type="radio" class="custom-control-input">
-                <span class="custom-control-indicator"></span>
-                <span class="custom-control-description">不需要素食</span>
-              </label>
-            </div>
-            <div class="mt-3 text-right">
+            <div class="text-right">
               <button type="button" class="btn btn-secondary">取消</button>
               <button type="submit" class="btn btn-primary">送出</button>
             </div>
@@ -324,34 +270,32 @@
   <section class="container-fluid bg-light">
     <div class="row text-white">
       <div class="col-md-6 p-5 bg-cover" style="background-image: url(https://images.unsplash.com/photo-1484834762280-66a18a5a8f0b?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=)">
-        <!-- 圖片來源：https://unsplash.com/photos/DolDYtdA8HU -->
         <div class="row">
           <div class="col-md-9">
-            <small>加入我們</small>
-            <h3>你便乖乖的把琴抱進你的床去，你是不認識你父親的</h3>
-            <p>短暫的激情是不值錢的，年代的人還需要摔打，別人一定會聽你，但它只是一環，80年代的人不要跟70年代，別人可以拷貝我的模式，一個成功的創業者，東西得一點點幹，也要注重過程，千萬別告訴別人，賺錢模式越多越說明你沒有模式。</p>
-            <a href="#" class="btn btn-outline-warning">加入我們</a>
+            <small>Wish and eat</small>
+            <h3>Listen to your palate</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos blanditiis perferendis corporis autem accusantium nam deserunt fugit neque pariatur necessitatibus. Expedita eius mollitia, natus fugiat illo laboriosam nihil distinctio obcaecati.</p>
+            <a href="#" class="btn btn-outline-warning">Join us</a>
           </div>
         </div>
       </div>
       <div class="col-md-6 p-5 bg-cover" style="background-image: url(https://images.unsplash.com/photo-1476029764343-569b983f5785?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=)">
-        <!-- 圖片來源：https://unsplash.com/photos/OOgSrGCp4YI -->
         <div class="row">
           <div class="col-md-9">
-            <small>品嚐佳餚</small>
-            <h3>踏著浪，我和世界不一樣，太多堅持</h3>
-            <p>一度剝落了的青春，寂寞的床偌大的房，我和我的倔強不能在shopping時候想你在路上會­遇見怎樣的穹蒼？戀人之間的時光，怎麼又是你，都騎虎難下了，唉呀，環境維護的話，發牢騷之前，打架了，大家不要吵架，我再也不逃了，我們回去了，謝謝，最恐怖的人，既然媽媽決定了，就算是死，辣辣的，一定很好吃。</p>
-            <a href="#" class="btn btn-outline-warning">品嚐佳餚</a>
+            <small>Let’s meat</small>
+            <h3>Food is our religion</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis officiis cumque doloremque eius molestiae, soluta odio iusto laborum esse, accusamus commodi quas eveniet velit? Expedita quas quisquam quasi corporis voluptatibus?</p>
+            <a href="#" class="btn btn-outline-warning">Taste</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <footer class="bg-light text-muted py-5">
+  <footer class="bg-light text-muted py-5 text-center">
     <div class="container">
       <ul class="list-inline">
-        <li class="list-inline-item">© Copright 2017 六角學院</li>
+        <li class="list-inline-item">© Copright Jack Liang</li>
         <li class="list-inline-item"><a href="#">GitHub</a></li>
         <li class="list-inline-item"><a href="#">Facebook</a></li>
         <li class="list-inline-item"><a href="#">About</a></li>
@@ -406,7 +350,7 @@
         <div class="modal-body">
           <div class="row">
             <div class="col-md text-secondary">
-              <h2>註冊六角西餐廳</h2>
+              <h2>註冊特斯特餐廳</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt error neque sint dicta inventore quas consequuntur ducimus. Distinctio asperiores nisi a suscipit. Repellendus sequi expedita fuga assumenda dolorem voluptatibus quia.</p>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias iure libero reiciendis sint beatae ratione quaerat? Illum voluptatibus quis quasi eveniet amet veniam laudantium laboriosam incidunt vero! Similique, libero delectus.</p>
             </div>
@@ -442,13 +386,7 @@
     </div>
   </div>
 
-  <script src="js/vendor.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-    crossorigin="anonymous"></script>
+  <script src="/javascripts/vendor.js"></script>
   <script>
     (function () {
       "use strict";
